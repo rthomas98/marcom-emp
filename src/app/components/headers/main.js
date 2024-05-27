@@ -4,27 +4,17 @@ import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
-  ArrowPathIcon,
-  DocumentChartBarIcon,
-  ListBulletIcon,
   LightBulbIcon,
   HandRaisedIcon,
   HandThumbUpIcon,
   UserCircleIcon,
   ArrowRightCircleIcon,
-  PhoneArrowDownLeftIcon,
   QuestionMarkCircleIcon,
   ServerStackIcon,
   ComputerDesktopIcon,
   RectangleStackIcon,
-  ShoppingBagIcon,
   ShoppingCartIcon,
-  ArrowDownOnSquareStackIcon,
   WindowIcon,
   CircleStackIcon,
   Square2StackIcon,
@@ -32,14 +22,30 @@ import {
   DevicePhoneMobileIcon,
   CodeBracketSquareIcon,
   PaintBrushIcon,
+  BellIcon,
+  ChartBarIcon,
+  CogIcon,
+  ChatBubbleBottomCenterIcon,
+  WrenchIcon,
+  CloudIcon,
+  AdjustmentsHorizontalIcon,
+  UsersIcon,
+  CodeBracketIcon,
+  BriefcaseIcon,
+  DocumentCheckIcon,
+  BuildingOfficeIcon,
+  GlobeAltIcon,
+  HeartIcon,
+  BuildingLibraryIcon,
+  MoonIcon,
+  TruckIcon,
+  AcademicCapIcon,
+  ChartBarSquareIcon,
+  IdentificationIcon,
+  HomeIcon,
+  ChartPieIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-  RectangleGroupIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon, RectangleGroupIcon } from "@heroicons/react/20/solid";
 
 const about = [
   {
@@ -65,6 +71,24 @@ const about = [
     description: "Why Choose Empuls3?",
     href: "/company/why-us",
     icon: HandThumbUpIcon,
+  },
+  {
+    name: "Our Work",
+    description: "Our Project Portfolio",
+    href: "/company/our-work",
+    icon: BriefcaseIcon,
+  },
+  {
+    name: "Case Studies",
+    description: "Detailed Client Successes",
+    href: "/company/case-studies",
+    icon: DocumentCheckIcon,
+  },
+  {
+    name: "Insight",
+    description: "Industry Insights and Trends",
+    href: "/company/insight",
+    icon: DocumentCheckIcon,
   },
 ];
 
@@ -145,76 +169,127 @@ const solutions = [
 
 const services = [
   {
-    name: "Solutions Overview",
-    description: "Comprehensive Tech Solutions",
-    href: "/solutions/solutions-overview",
-    icon: ChartPieIcon,
+    name: "Services Overview",
+    description: "All Our Servicess",
+    href: "/services/services-overview",
+    icon: BellIcon,
   },
   {
-    name: "Back-End Development",
-    description: "Robust Server-Side Solutions",
-    href: "solutions/back-end-development",
-    icon: ServerStackIcon,
+    name: "Application Services",
+    description: "Comprehensive App Solutions",
+    href: "/services/application-services",
+    icon: ChartBarIcon,
   },
   {
-    name: "Custom Software Development",
-    description: "Tailored Software Solutions",
-    href: "/solutions/custom-software-development",
-    icon: ComputerDesktopIcon,
+    name: "DevOps",
+    description: "Integrated DevOps Services/;.",
+    href: "/services/devops",
+    icon: CogIcon,
   },
   {
-    name: "Custom WordPress Development",
-    description: "Unique WordPress Customizations",
-    href: "/solutions/custom-wordpress-development",
-    icon: RectangleStackIcon,
+    name: "IT Consulting",
+    description: "Expert IT Advice",
+    href: "/services/it-consulting",
+    icon: ChatBubbleBottomCenterIcon,
   },
   {
-    name: "E-commerce Development",
-    description: "Online Store Development",
-    href: "/solutions/e-commerce-development",
-    icon: ShoppingCartIcon,
+    name: "Maintenance and Support",
+    description: "Ongoing Tech Support",
+    href: "/services/maintenance-and-support",
+    icon: WrenchIcon,
   },
   {
-    name: "Front-End Development",
-    description: "Engaging User Interfaces",
-    href: "/solutions/front-end-development",
-    icon: WindowIcon,
+    name: "Managed IT Services",
+    description: "Complete IT Management",
+    href: "/services/managed-it-services",
+    icon: CloudIcon,
   },
   {
-    name: "Full-Stack Development",
-    description: "End-to-End Tech Solutions",
-    href: "/solutions/full-stack-development",
-    icon: CircleStackIcon,
+    name: "Quality Assurance and Testing",
+    description: "Ensuring Software Quality",
+    href: "/services/quality-assurance-and-testing",
+    icon: AdjustmentsHorizontalIcon,
   },
   {
-    name: "HubSpot Development",
-    description: "HubSpot CRM Integrations",
-    href: "/solutions/hubspot-development",
-    icon: Square2StackIcon,
+    name: "Smart Teams",
+    description: "Dedicated Tech Teams",
+    href: "/services/smart-teams",
+    icon: UsersIcon,
   },
   {
-    name: "MVP Development",
-    description: "Launch Startups Efficiently",
-    href: "/solutions/mvp-development",
-    icon: RocketLaunchIcon,
+    name: "Software Engineering",
+    description: "Advanced Software Solutions",
+    href: "/services/software-engineering",
+    icon: CodeBracketIcon,
+  },
+];
+
+const industries = [
+  {
+    name: "Industries Overview",
+    description: "Sectors We Serve",
+    href: "/industries/industries-overview",
+    icon: BuildingOfficeIcon,
   },
   {
-    name: "Progressive Web Applications",
-    description: "Cutting-Edge Web Apps",
-    href: "/solutions/progressive-web-applications",
-    icon: DevicePhoneMobileIcon,
+    name: "Oil and Gas",
+    description: "Tech Solutions for Oil and Gas",
+    href: "/industries/oil-and-gas",
+    icon: GlobeAltIcon,
   },
   {
-    name: "React Native Development",
-    description: "Cross-Platform Mobile Apps",
-    href: "/solutions/react-native-development",
-    icon: CodeBracketSquareIcon,
+    name: "Healthcare",
+    description: "Health Tech Solutions;.",
+    href: "/industries/healthcare",
+    icon: HeartIcon,
   },
   {
-    name: "Software Development and Design",
-    description: "Elegant & Functional Software",
-    href: "/solutions/software-development-and-design",
-    icon: PaintBrushIcon,
+    name: "Protech Software Development",
+    description: "Property Tech Innovations",
+    href: "/industries/proptech-software-development",
+    icon: BuildingLibraryIcon,
+  },
+  {
+    name: "Technology Startups",
+    description: "Startup Tech Support",
+    href: "/industries/technology-startups",
+    icon: MoonIcon,
+  },
+  {
+    name: "Transportation and Logistics",
+    description: " Logistics Tech Solutions",
+    href: "/industries/transportation-and-logistics",
+    icon: TruckIcon,
+  },
+  {
+    name: "Education",
+    description: "EdTech Innovations",
+    href: "/industries/education",
+    icon: AcademicCapIcon,
+  },
+  {
+    name: "Manufacturing",
+    description: "Smart Manufacturing Tech",
+    href: "/industries/manufacturing",
+    icon: ChartBarSquareIcon,
+  },
+  {
+    name: "Energy",
+    description: "Energy Tech Solutions",
+    href: "/industries/energy",
+    icon: ChartBarSquareIcon,
+  },
+  {
+    name: "Government",
+    description: "GovTech Innovations",
+    href: "/industries/government",
+    icon: IdentificationIcon,
+  },
+  {
+    name: "Real Estate",
+    description: "Real Estate Tech Innovations",
+    href: "/industries/real-estate",
+    icon: HomeIcon,
   },
 ];
 
@@ -252,7 +327,11 @@ export default function MainHeader() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Empuls3</span>
-            <img className="h-auto w-3/5" src="./imgs/emp-logo.svg" alt="" />
+            <img
+              className="h-auto w-3/5"
+              src="/imgs/emp-logo.svg"
+              alt="Empuls3 Logo"
+            />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -267,9 +346,10 @@ export default function MainHeader() {
         </div>
 
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Home
           </a>
+
           <Popover>
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Company
@@ -295,9 +375,9 @@ export default function MainHeader() {
                       key={item.name}
                       className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-em-purple group-hover:bg-em-pink">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-em-yellow group-hover:text-white"
                           aria-hidden="true"
                         />
                       </div>
@@ -312,17 +392,17 @@ export default function MainHeader() {
                     </div>
                   ))}
                 </div>
-                <div className="bg-gray-50">
+                <div className="bg-em-pink">
                   <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
                       {callsToAction.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
-                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-white hover:bg-dark-em-pink"
                         >
                           <item.icon
-                            className="h-5 w-5 flex-none text-gray-400"
+                            className="h-5 w-5 flex-none text-em-yellow"
                             aria-hidden="true"
                           />
                           {item.name}
@@ -358,9 +438,9 @@ export default function MainHeader() {
                         key={item.name}
                         className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
                       >
-                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-em-purple group-hover:bg-em-pink">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-em-yellow group-hover:text-white"
                             aria-hidden="true"
                           />
                         </div>
@@ -379,16 +459,13 @@ export default function MainHeader() {
                       </div>
                     ))}
                   </div>
-                  <div className="bg-gray-50 px-8 py-6">
+                  <div className="bg-em-pink px-8 py-6">
                     <div className="flex items-center gap-x-3">
-                      <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                      <h3 className="text-sm font-semibold leading-6 text-white">
                         Enterprise
                       </h3>
-                      <p className="rounded-full bg-indigo-600/10 px-2.5 py-1.5 text-xs font-semibold text-indigo-600">
-                        New
-                      </p>
                     </div>
-                    <p className="mt-2 text-sm leading-6 text-gray-600">
+                    <p className="mt-2 text-sm leading-6 text-white">
                       Empower your entire team with even more advanced tools.
                     </p>
                   </div>
@@ -396,6 +473,7 @@ export default function MainHeader() {
               </Popover.Panel>
             </Transition>
           </Popover>
+
           <Popover className="relative">
             <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               <span>Services</span>
@@ -419,9 +497,9 @@ export default function MainHeader() {
                         key={item.name}
                         className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
                       >
-                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-em-purple group-hover:bg-em-pink">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-em-yellow group-hover:text-white"
                             aria-hidden="true"
                           />
                         </div>
@@ -440,30 +518,88 @@ export default function MainHeader() {
                       </div>
                     ))}
                   </div>
-                  <div className="bg-gray-50 px-8 py-6">
+                  <div className="bg-em-pink px-8 py-6">
                     <div className="flex items-center gap-x-3">
-                      <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                        Enterprise
+                      <h3 className="text-sm font-semibold leading-6 text-white">
+                        Our Services
                       </h3>
-                      <p className="rounded-full bg-indigo-600/10 px-2.5 py-1.5 text-xs font-semibold text-indigo-600">
-                        New
-                      </p>
                     </div>
-                    <p className="mt-2 text-sm leading-6 text-gray-600">
-                      Empower your entire team with even more advanced tools.
+                    <p className="mt-2 text-sm leading-6 text-white">
+                      Explore our expert services, from application development
+                      to IT consulting, designed to drive your success.
                     </p>
                   </div>
                 </div>
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </a>
+
+          <Popover className="relative">
+            <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+              <span>Industries</span>
+              <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+            </Popover.Button>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            >
+              <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+                <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 lg:max-w-3xl">
+                  <div className="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+                    {industries.map((item) => (
+                      <div
+                        key={item.name}
+                        className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                      >
+                        <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-em-purple group-hover:bg-em-pink">
+                          <item.icon
+                            className="h-6 w-6 text-em-yellow group-hover:text-white"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div>
+                          <a
+                            href={item.href}
+                            className="font-semibold text-gray-900"
+                          >
+                            {item.name}
+                            <span className="absolute inset-0" />
+                          </a>
+                          <p className="mt-1 text-gray-600">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="bg-em-pink px-8 py-6">
+                    <div className="flex items-center gap-x-3">
+                      <h3 className="text-sm font-semibold leading-6 text-white">
+                        Our Industries
+                      </h3>
+                    </div>
+                    <p className="mt-2 text-sm leading-6 text-white">
+                      Discover the sectors we serve with specialized technology
+                      solutions tailored to each industry's unique needs.
+                    </p>
+                  </div>
+                </div>
+              </Popover.Panel>
+            </Transition>
+          </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a
+            href="/contact-us"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Contact Us <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -477,11 +613,7 @@ export default function MainHeader() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <img className="h-8 w-auto" src="/imgs/mobile-logo.svg" alt="" />
             </a>
             <button
               type="button"
@@ -551,31 +683,69 @@ export default function MainHeader() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Services
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {[...services, ...callsToAction].map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Industries
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {[...industries, ...callsToAction].map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/contact-us"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Contact Us
                 </a>
               </div>
             </div>

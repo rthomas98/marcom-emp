@@ -1,24 +1,43 @@
 "use client";
 
+import React from "react";
+
 const navigation = {
+  about: [
+    { name: "About  Us", href: "/company/about-us" },
+    { name: "Insight", href: "/company/insight" },
+    {
+      name: "Frequently Asked Questions",
+      href: "/company/frequently-asked-questions",
+    },
+    { name: "Why Us", href: "/company/why-us" },
+    { name: "Partners", href: "/company/partnership" },
+  ],
+  services: [
+    { name: "Application Services", href: "/services/application-services" },
+    { name: "DevOps", href: "/services/devops" },
+    { name: "IT Consulting", href: "/services/it-consulting" },
+    {
+      name: "Maintenance and Support",
+      href: "/services/maintenance-and-support",
+    },
+    { name: "More Services", href: "/services/services-overview" },
+  ],
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    {
+      name: "Custom WordPress Development",
+      href: "/solutions/custom-wordpress-development",
+    },
+    { name: "Back-End Development", href: "/solutions/back-end-development" },
+    {
+      name: "Full-Stack Development",
+      href: "/solutions/full-stack-development",
+    },
+    {
+      name: "React Native Development",
+      href: "/solutions/react-native-development",
+    },
+    { name: "More Solutions", href: "/solutions/solutions-overview" },
   ],
   legal: [
     { name: "Claim", href: "#" },
@@ -91,8 +110,42 @@ const navigation = {
 };
 
 export default function MainFooter() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <footer
+      className="relative isolate overflow-hidden bg-em-purple"
+      aria-labelledby="footer-heading"
+    >
+      <svg
+        className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+        />
+      </svg>
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -100,20 +153,23 @@ export default function MainFooter() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img
-              className="h-7"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              className="h-8"
+              src="/imgs/emp-footer-logo.svg"
               alt="Company name"
             />
-            <p className="text-sm leading-6 text-gray-300">
-              Making the world a better place through constructing elegant
-              hierarchies.
+            <p className="text-sm leading-6 text-white">
+              At Empuls3, we deliver customized technology services to meet the
+              unique needs of businesses across various industries. From
+              software development to IT consulting, our expert solutions are
+              designed to enhance operational efficiency and drive your business
+              forward.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
+                  className="text-white hover:text-em-yellow"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -125,14 +181,14 @@ export default function MainFooter() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Solutions
+                  Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.about.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-white hover:text-em-yellow"
                       >
                         {item.name}
                       </a>
@@ -142,14 +198,14 @@ export default function MainFooter() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Support
+                  Services
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.services.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-white hover:text-em-yellow"
                       >
                         {item.name}
                       </a>
@@ -161,14 +217,14 @@ export default function MainFooter() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
+                  Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.solutions.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-white hover:text-em-yellow"
                       >
                         {item.name}
                       </a>
@@ -185,7 +241,7 @@ export default function MainFooter() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-white hover:text-em-yellow"
                       >
                         {item.name}
                       </a>
@@ -197,8 +253,8 @@ export default function MainFooter() {
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+          <p className="text-xs leading-5 text-white">
+            &copy; {currentYear} Empuls3, Inc. All rights reserved.
           </p>
         </div>
       </div>
