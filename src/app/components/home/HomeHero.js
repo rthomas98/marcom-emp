@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const marqueeDownVariants = {
   animate: {
-    y: ["-100%", "100%"],
+    y: ["-50%", "50%"],
     transition: {
       y: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 15,
+        duration: 30,
         ease: "linear",
       },
     },
@@ -21,12 +21,12 @@ const marqueeDownVariants = {
 
 const marqueeUpVariants = {
   animate: {
-    y: ["100%", "-100%"],
+    y: ["0%", "-50%"],
     transition: {
       y: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 15,
+        duration: 30,
         ease: "linear",
       },
     },

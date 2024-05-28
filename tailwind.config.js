@@ -17,20 +17,6 @@ module.exports = {
         "em-dark-purple": "#1F1946",
         "em-light": "#F8F9FA",
       },
-      keyframes: {
-        marqueeDown: {
-          "0%": { transform: "translateY(-100%)" },
-          "100%": { transform: "translateY(100%)" },
-        },
-        marqueeUp: {
-          "0%": { transform: "translateY(100%)" },
-          "100%": { transform: "translateY(-100%)" },
-        },
-      },
-      animation: {
-        marqueeDown: "marqueeDown 0s linear infinite",
-        marqueeUp: "marqueeUp 0s linear infinite",
-      },
     },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
