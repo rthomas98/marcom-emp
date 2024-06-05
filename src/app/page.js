@@ -7,11 +7,12 @@ import HomeWhyUs from "./components/home/HomeWhyUs";
 import HomeProcess from "./components/home/HomeProcess";
 import HomeCta from "./components/home/HomeCta";
 import RecentPosts from "./components/global/RecentPost";
+import Test from "./components/home/Test";
 
 export default function Home() {
   return (
     <main>
-      <HomeHero />
+      <Test />
       <ImageLeft />
       <SolutionsSection />
       <ServicesSection />

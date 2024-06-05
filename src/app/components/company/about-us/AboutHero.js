@@ -2,17 +2,41 @@
 
 import React from "react";
 import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const AboutHero = () => {
   return (
-    <section className="container mx-auto grid items-center gap-6 px-4 py-10 md:py-20 lg:py-32 lg:grid-cols-3">
+    <section className="relative isolate container mx-auto grid items-center gap-6 px-4 py-10 md:py-20 lg:py-32 lg:grid-cols-3">
+      <svg
+        className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
+        />
+      </svg>
       <div className="space-y-6">
-        <h3 className="text-sm font-medium tracking-tight text-primary">
-          Design Inspiration
-        </h3>
-        <h2 className="text-3xl font-extrabold tracking-tight">
-          Crafted with Passion
-        </h2>
+        <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-gray-900 dark:bg-pink dark:text-white">
+          Innovating Business with Tailored Tech Solutions
+        </div>
+        <h1 className="text-5xl font-extrabold tracking-tight">
+          Delivering Excellence in Technology Solutions
+        </h1>
         <p className="text-gray-500">
           Our team of skilled designers and developers pour their creativity
           into every pixel, ensuring a visually stunning and delightful user
@@ -21,16 +45,17 @@ const AboutHero = () => {
         </p>
         <div className="flex space-x-4">
           <Link
-            href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+            href="/company/about-us"
+            className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
           >
-            Learn More
+            Learm more about us
           </Link>
           <Link
-            href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+            href="/frequently-asked-questions"
+            className="bg-transparent text-em-purple py-2 px-4 rounded hover:bg-transparent hover:text-em-pink flex items-center"
           >
-            Get Started
+            Have more questions?
+            <ArrowRightIcon className="h-5 w-5 ml-2" />
           </Link>
         </div>
       </div>
