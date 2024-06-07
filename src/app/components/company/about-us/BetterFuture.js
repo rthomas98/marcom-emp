@@ -4,7 +4,36 @@ import React from "react";
 
 const BetterFuture = () => {
   return (
-    <section className="w-full py-12">
+    <section className="relative isolate w-full py-12">
+      <svg
+        className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+        />
+      </svg>
       <div className="container mx-auto grid  gap-6 px-4 md:px-6">
         <div className="grid items-center gap-4 md:grid-cols-2 lg:pb-5">
           <div className="space-y-2">
@@ -29,7 +58,7 @@ const BetterFuture = () => {
         <img
           alt="Image"
           className="aspect-video w-full overflow-hidden rounded-lg object-cover"
-          src="/imgs/placeholder.svg"
+          src="/imgs/about-hero-img-3.png"
         />
       </div>
     </section>

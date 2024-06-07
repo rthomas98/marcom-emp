@@ -6,25 +6,13 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const HomeWhyUs = () => {
   return (
-    <section className="relative isolate w-full py-12 md:py-24 lg:py-32">
-      <div
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true"
-      >
-        <div
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-        />
-      </div>
+    <section className="relative isolate w-full py-12 md:py-24 lg:py-28">
       <div className="container mx-auto grid gap-8 items-center px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
         <div className="space-y-8 xl:space-y-10">
           <div className="space-y-4 lg:space-y-6">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-em-yellow px-3 py-1 text-sm font-medium text-em-purple">
-                Specialized Technology Services
+                Customized Solutions for Your Success
               </div>
               <h2 className="text-3xl font-bold sm:text-4xl xl:text-5xl py-5">
                 Why Choose Empuls3 for Your Technology Needs
@@ -76,7 +64,7 @@ const HomeWhyUs = () => {
           <img
             alt="Feature Image"
             className="aspect-square w-full overflow-hidden rounded-xl object-cover"
-            src="imgs/placeholder.svg"
+            src="imgs/em-home-img-9.png"
           />
         </div>
       </div>

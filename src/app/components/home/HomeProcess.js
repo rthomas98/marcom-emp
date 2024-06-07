@@ -38,7 +38,7 @@ const HomeProcess = () => {
         <img
           alt="Image"
           className="rounded-lg object-cover w-full h-auto"
-          src="imgs/placeholder.svg"
+          src="imgs/em-home-img-10.png"
           style={{
             aspectRatio: "600/400",
           }}
@@ -46,7 +46,9 @@ const HomeProcess = () => {
       </div>
       <div className="grid gap-8 order-1 md:order-2">
         <div className="border-l-4 border-transparent hover:border-primary transition-colors px-4 py-2">
-          <h2 className="text-2xl font-semibold mb-2">Our Process</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl py-5">
+            Our Process
+          </h2>
           <p className="text-gray-500">
             At Empuls3, we follow a comprehensive process to deliver our
             technology services. It starts with an initial consultation to

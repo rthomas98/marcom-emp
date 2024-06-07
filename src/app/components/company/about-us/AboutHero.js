@@ -31,10 +31,10 @@ const AboutHero = () => {
         />
       </svg>
       <div className="space-y-6">
-        <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-gray-900 dark:bg-pink dark:text-white">
+        <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-white">
           Innovating Business with Tailored Tech Solutions
         </div>
-        <h1 className="text-5xl font-extrabold tracking-tight">
+        <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl text-purple">
           Delivering Excellence in Technology Solutions
         </h1>
         <p className="text-gray-500">
@@ -63,7 +63,7 @@ const AboutHero = () => {
         <img
           alt="Image"
           className="object-cover rounded-lg"
-          src="/imgs/placeholder.svg"
+          src="/imgs/about-hero-img-1.png"
           style={{
             aspectRatio: "480/720",
           }}
@@ -73,7 +73,7 @@ const AboutHero = () => {
         <img
           alt="Image"
           className="object-cover rounded-lg"
-          src="/imgs/placeholder.svg"
+          src="/imgs/about-hero-img-2.png"
           style={{
             aspectRatio: "480/360",
           }}

@@ -39,8 +39,8 @@ const ServicesSection = () => {
       <div className="container mx-auto grid gap-12 px-4 md:px-6">
         <div className="grid items-inline gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-em-yellow px-3 py-1 text-sm font-medium text-em-purple">
-              Specialized Technology Services
+            <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-white">
+              Expertise in End-to-End Development for All Business Sizes
             </div>
             <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl py-5">
               Creating Scalable Solutions for Startups to Enterprises
@@ -62,7 +62,7 @@ const ServicesSection = () => {
             <img
               alt="Feature 1"
               className="aspect-video w-full overflow-hidden rounded-xl object-cover"
-              src="imgs/placeholder.svg"
+              src="imgs/em-home-img-7.png"
             />
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Custom Software Development</h3>
@@ -71,12 +71,20 @@ const ServicesSection = () => {
                 specific needs.
               </p>
             </div>
+            <div className="mt-6 flex gap-x-4 md:mt-8">
+              <Link
+                href="/company/about-us"
+                className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
           <div className="space-y-4">
             <img
               alt="Feature 2"
               className="aspect-video w-full overflow-hidden rounded-xl object-cover"
-              src="imgs/placeholder.svg"
+              src="imgs/em-home-img-6.png"
             />
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Ecommerce Development</h3>
@@ -85,12 +93,20 @@ const ServicesSection = () => {
                 businesses.
               </p>
             </div>
+            <div className="mt-6 flex gap-x-4 md:mt-8">
+              <Link
+                href="/company/about-us"
+                className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
           <div className="space-y-4">
             <img
               alt="Feature 3"
               className="aspect-video w-full overflow-hidden rounded-xl object-cover"
-              src="imgs/placeholder.svg"
+              src="imgs/em-home-img-8.png"
             />
             <div className="space-y-2">
               <h3 className="text-xl font-bold">MVP Development</h3>
@@ -99,9 +115,17 @@ const ServicesSection = () => {
                 ideas.
               </p>
             </div>
+            <div className="mt-6 flex gap-x-4 md:mt-8">
+              <Link
+                href="/company/about-us"
+                className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 min-[400px]:flex-row justify-start">
+        <div className="flex flex-col gap-2 min-[400px]:flex-row justify-start mt-8">
           <Link
             href="/services/services-overview"
             className="bg-em-pink text-white py-2 px-4 rounded hover:bg-em-pink"

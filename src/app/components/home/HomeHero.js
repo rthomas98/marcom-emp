@@ -111,7 +111,7 @@ const HomeHero = () => {
             <img
               alt="Image"
               className="aspect-[3/4] overflow-hidden rounded-lg object-cover"
-              src="imgs/placeholder.svg"
+              src="imgs/hero-img-1.png"
             />
             <img
               alt="Image"
