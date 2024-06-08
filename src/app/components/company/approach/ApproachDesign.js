@@ -1,91 +1,121 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const ApproachDesign = () => {
   return (
-    <section class="px-[5%] py-16 md:py-24 lg:py-28">
-      <div class="container">
-        <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+    <section className="relative isolate px-[5%] py-16 md:py-24 lg:py-28">
+      <svg
+        className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_top,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+        />
+      </svg>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <p class="mb-3 font-semibold md:mb-4">Tagline</p>
-            <h1 class="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Medium length section heading goes here
-            </h1>
-            <p class="mb-5 text-base md:mb-6 md:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
+            <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-white">
+              Bringing Innovation to Life with Expert Design and Development
+            </div>
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl py-5">
+              Transforming Ideas into Tangible Products and Services
+            </h2>
+            <p className="mb-5 text-base md:mb-6 md:text-md">
+              Our design and development phase is where innovation takes shape.
+              We combine creativity and technical expertise to turn ideas into
+              tangible products and services that exceed expectations.
             </p>
-            <ul class="grid grid-cols-1 gap-4 py-2">
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+            <ul className="grid grid-cols-1 gap-4 py-2">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 1"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  We provide innovative and creative solutions tailored to meet
+                  the unique needs of each project. Our team leverages their
+                  expertise to deliver exceptional and imaginative outcomes.
                 </span>
               </li>
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 2"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Our collaborative approach ensures that we work closely with
+                  our clients throughout the project. We prioritize open
+                  communication and teamwork to achieve the best results
+                  together.
                 </span>
               </li>
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 3"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  We follow an iterative process that allows for continuous
+                  improvement and refinement. By regularly reviewing and
+                  adjusting our strategies, we ensure optimal project outcomes
+                  at every stage.
                 </span>
               </li>
             </ul>
-            <div class="mt-6 flex items-center gap-x-4 md:mt-8">
-              <button class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3">
-                Button
-              </button>
-              <button class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0">
-                Button
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="0"
-                  viewBox="0 0 15 15"
-                  class="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
+            <div className="mt-6 flex items-center gap-x-4 md:mt-8">
+              <Link
+                href="/contact-us"
+                className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
+              >
+                Ready To get Started?
+              </Link>
+              <Link
+                href="/company/frequently-asked-questions"
+                className="bg-transparent text-purple py-2 px-4 rounded hover:bg-transparent hover:text-em-pink flex items-center"
+              >
+                Have MOre Questions?
+                <ArrowRightIcon className="h-5 w-5 ml-2" />
+              </Link>
             </div>
           </div>
           <div>
             <img
-              src="https://relume-assets.s3.amazonaws.com/placeholder-image.svg"
-              class="w-full object-cover"
+              src="../imgs/appoach-img-3.png"
+              className="w-full rounded-lg object-cover"
               alt="Placeholder image"
             />
           </div>
