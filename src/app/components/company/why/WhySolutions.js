@@ -1,91 +1,97 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const WhySolutions = () => {
   return (
-    <section class="px-[5%] py-16 md:py-24 lg:py-28">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+    <section className="relative isolate px-[5%] py-16 md:py-24 lg:py-28">
+       <div
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <div
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+          />
+        </div>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <p class="mb-3 font-semibold md:mb-4">Tagline</p>
-            <h1 class="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Medium length section heading goes here
-            </h1>
-            <p class="mb-5 text-base md:mb-6 md:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
-            </p>
-            <ul class="grid grid-cols-1 gap-4 py-2">
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+            <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-white">
+            Innovative Solutions for Complex Technology Problems
+            </div>
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl py-5">
+            Innovative Solutions for Complex Technology Problems
+            </h2>
+            <div className="space-y-4 text-lg leading-8 text-gray-600 mb-5">
+            <p>
+            At Empuls3, we take pride in our innovative approach to tackling complex technology challenges. Our team of experts is dedicated to delivering cutting-edge solutions that exceed client expectations.
+          </p>
+          </div>
+            <ul className="grid grid-cols-1 gap-4 py-2">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 1"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span className="text-base leading-7 text-gray-600">
+                <strong>Collaborative Problem-Solving:</strong> Working together to find the best solutions.
                 </span>
               </li>
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 2"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span className="text-base leading-7 text-gray-600">
+                <strong>Customized Technology Solutions:</strong> Tailored to meet your unique needs.
                 </span>
               </li>
-              <li class="flex self-start">
-                <div class="mr-4 flex-none self-start">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
                   <img
                     src="https://relume-assets.s3.amazonaws.com/relume-icon.svg"
                     alt="Relume logo 3"
-                    class="size-6"
+                    className="size-6"
                   />
                 </div>
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span className="text-lg leading-8 text-gray-600">
+                <strong>Exceptional Client Satisfaction:</strong> Ensuring our clients' success and satisfaction.
                 </span>
               </li>
             </ul>
-            <div class="mt-6 flex items-center gap-x-4 md:mt-8">
-              <button class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3">
-                Button
-              </button>
-              <button class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0">
-                Button
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="0"
-                  viewBox="0 0 15 15"
-                  class="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
+            <div className="mt-6 flex items-center gap-x-4 md:mt-8">
+            
+            <Link
+              href="/solutions/solutions-overview"
+              className="bg-em-yellow text-em-purple py-2 px-4 rounded hover:bg-em-pink hover:text-white"
+            >
+              Learn More About Our Solutions
+            </Link>
+            <Link
+              href="contact-us"
+              className="bg-transparent text-purple py-2 px-4 rounded hover:bg-transparent hover:text-em-pink flex items-center"
+            >
+              Get in Touch with Our Experts
+              <ArrowRightIcon className="h-5 w-5 ml-2" />
+            </Link>
             </div>
           </div>
           <div>
             <img
-              src="https://relume-assets.s3.amazonaws.com/placeholder-image.svg"
-              class="w-full object-cover"
+              src="../imgs/why-solutions-img.png"
+              className="w-full object-cover rounded-xl"
               alt="Placeholder image"
             />
           </div>

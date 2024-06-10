@@ -1,59 +1,64 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const WhyTechnology = () => {
   return (
-    <section class="px-[5%] py-16 md:py-24 lg:py-28">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
-          <div>
-            <img
-              src="https://relume-assets.s3.amazonaws.com/placeholder-image.svg"
-              class="w-full object-cover"
-              alt="Placeholder image"
-            />
-          </div>
-          <div>
-            <p class="mb-3 font-semibold md:mb-4">Tagline</p>
-            <h2 class="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Medium length section heading goes here
-            </h2>
-            <p class="md:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
-            </p>
-            <div class="mt-6 flex items-center gap-x-4 md:mt-8">
-              <button class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3">
-                Button
-              </button>
-              <button class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0">
-                Button
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="0"
-                  viewBox="0 0 15 15"
-                  class="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
+    <section className="relative isolate overflow-hidden bg-em-yellow">
+      <svg
+        className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+        />
+      </svg>
+    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <div className="grid grid-cols-2 gap-4 mt-8">
+      <Image className="w-full rounded-lg"  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
+      <Image className="w-full rounded-lg"  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
+
+            <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
+            <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
+        </div>
+        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div className="inline-block rounded-lg bg-em-pink px-3 py-1 text-sm font-medium text-white">
+        Leading the Way in Tech Innovation
             </div>
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl py-5 text-em-purple">
+            Experience and Expertise in the Technology Industry
+            </h2>
+            <div className="space-y-4 text-lg leading-8 text-gray-600 mb-5">
+            <p>
+            At Empuls3, we pride ourselves on our deep understanding of the technology industry and our extensive experience in delivering innovative solutions to our clients. Our team of experts is dedicated to staying ahead of the curve and leveraging the latest technologies to help businesses thrive in the digital age. With a focus on continuous learning and adaptation, we ensure that our clients benefit from cutting-edge advancements and best practices in technology.
+
+          </p>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
   );
 };
 
